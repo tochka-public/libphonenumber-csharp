@@ -1,20 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>C# port of Google's common Java, C++ and Javascript library for parsing, formatting, storing and validating international phone numbers. For usage samples: http: //code.google.com/p/libphonenumber/A port of Google's libphonenumber for .NET Core</Description>
+    <Description>C# port of Google's common Java, C++ and Javascript library for parsing, formatting, storing and validating international phone numbers. For usage samples: http: //code.google.com/p/libphonenumber/A port of Google's libphonenumber for .NET Core
+Signed version</Description>
     <AssemblyTitle>libphonenumber-csharp</AssemblyTitle>
     <VersionPrefix>$(APPVEYOR_BUILD_VERSION)</VersionPrefix>
     <Authors>Patrick Mézard;Jarrod Alexander;Google;libphonenumber;contributors</Authors>
     <TargetFrameworks>net40;netstandard1.1</TargetFrameworks>
     <AssemblyName>PhoneNumbers</AssemblyName>
-    <PackageId>libphonenumber-csharp</PackageId>
-    <PackageTags>phonenumber phone libphonenumber e164 e.164 international</PackageTags>
-    <PackageProjectUrl>https://github.com/aidanbebbington/libphonenumber-csharp</PackageProjectUrl>
+    <PackageId>libphonenumber-csharp-signed</PackageId>
+    <PackageTags>phonenumber phone libphonenumber e164 e.164 international signed_version</PackageTags>
+    <PackageProjectUrl>https://github.com/tochka-public/libphonenumber-csharp</PackageProjectUrl>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/aidanbebbington/libphonenumber-csharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tochka-public/libphonenumber-csharp</RepositoryUrl>
     <DebugType>full</DebugType>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>PhoneNumbers-sign.snk</AssemblyOriginatorKeyFile>
+    <AssemblyVersion>8.8.0.0</AssemblyVersion>
+    <FileVersion>8.8.0.0</FileVersion>
+    <Version>8.8.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
